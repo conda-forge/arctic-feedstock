@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -19,10 +19,15 @@ requirements:
   build:
     - python
     - setuptools
+    - setuptools-git
+    - six
+    - numpy
     - pip
   run:
     - python
     - decorator
+    - enum34
+    - futures
     - pandas
     - pymongo >=3.6.0
     - python-dateutil
