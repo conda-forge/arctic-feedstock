@@ -23,6 +23,7 @@ requirements:
   run:
     - python
     - decorator
+    - enum34
     - pandas
     - pymongo >=3.6.0
     - python-dateutil
