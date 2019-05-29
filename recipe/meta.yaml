@@ -19,11 +19,15 @@ requirements:
   build:
     - python
     - setuptools
+    - setuptools-git
+    - six
+    - numpy
     - pip
   run:
     - python
     - decorator
     - enum34
+    - futures
     - pandas
     - pymongo >=3.6.0
     - python-dateutil
