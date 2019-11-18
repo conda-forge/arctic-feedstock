@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -32,6 +32,8 @@ requirements:
     - pytz
     - tzlocal
     - lz4
+    - enum-compat
+    - mockextras
 
 test:
   imports:
