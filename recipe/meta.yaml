@@ -1,6 +1,6 @@
 {% set name = "arctic" %}
-{% set version = "1.79.2" %}
-{% set sha256 = "9bd9335355d2881c9d52c94cf28faec67a7cf8b547ee6b53834a471b5a4b864d" %}
+{% set version = "1.79.3" %}
+{% set sha256 = "365a05c4aca53da1edc200991b542ecd2e3fddbe02a4444a951a2d8f41b0b475" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
