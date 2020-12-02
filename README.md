@@ -5,9 +5,13 @@ Home: https://github.com/manahl/arctic
 
 Package license: LGPL-2.1-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arctic-feedstock/blob/master/LICENSE.txt)
 
 Summary: High performance datastore for time series and tick data
+
+Development: https://github.com/manahl/arctic
+
+Documentation: https://arctic.readthedocs.io/en/latest/
 
 Arctic is a high performance datastore for numeric data. It supports
 Pandas, numpy arrays and pickled objects out-of-the-box, with pluggable
