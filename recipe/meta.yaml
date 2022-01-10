@@ -1,6 +1,6 @@
 {% set name = "arctic" %}
-{% set version = "1.79.3" %}
-{% set sha256 = "365a05c4aca53da1edc200991b542ecd2e3fddbe02a4444a951a2d8f41b0b475" %}
+{% set version = "1.80.2" %}
+{% set sha256 = "cd5d9e63cb17229986a93331135fdff978d48703a8dcdedb9e1fdab109fd8ead" %}
 
 package:
   name: {{ name|lower }}
@@ -13,10 +13,10 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - setuptools-git
