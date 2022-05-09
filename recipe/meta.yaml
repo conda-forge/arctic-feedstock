@@ -24,7 +24,7 @@ requirements:
     - numpy <=1.18.4
     - pip
   run:
-    - python >=3.4
+    - python
     - decorator
     - enum-compat
     - mockextras
