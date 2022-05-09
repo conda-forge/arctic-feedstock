@@ -28,6 +28,7 @@ requirements:
     - decorator
     - enum-compat
     - mockextras
+    - {{ pin_compatible('numpy') }}
     - pandas <=1.0.3
     - pymongo >=3.6.0,<=3.11.0
     - python-dateutil
