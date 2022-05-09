@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - setuptools-git
   run:
     - python >=3.6
