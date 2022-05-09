@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<36]
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
     - numpy <=1.18.4
     - pip
   run:
-    - python
+    - python >=3.6
     - decorator
     - enum-compat
     - mockextras
