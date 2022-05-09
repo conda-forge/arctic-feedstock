@@ -21,19 +21,19 @@ requirements:
     - setuptools
     - setuptools-git
     - six
-    - numpy
+    - numpy <=1.18.4
     - pip
   run:
     - python >=3.4
     - decorator
-    - pandas
-    - pymongo >=3.6.0
+    - enum-compat
+    - mockextras
+    - pandas <=1.0.3
+    - pymongo >=3.6.0,<=3.11.0
     - python-dateutil
     - pytz
     - tzlocal
     - lz4
-    - enum-compat
-    - mockextras
 
 test:
   imports:
