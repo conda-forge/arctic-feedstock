@@ -16,14 +16,14 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - numpy >=1.12,<1.19
   host:
     - numpy
     - pip
     - python
     - setuptools
     - setuptools-git
-  build:
-    - numpy >=1.12,<1.19  
   run:
     - python >=3.6
     - decorator
