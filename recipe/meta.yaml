@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - numpy =1.18
+    - numpy
     - pip
     - python
     - setuptools
