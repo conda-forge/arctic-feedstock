@@ -13,13 +13,11 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
 
 requirements:
-  build:
-    - numpy >=1.12,<1.19
   host:
-    - numpy
+    - numpy <1.19
     - pip
     - python
     - setuptools
@@ -29,7 +27,7 @@ requirements:
     - decorator
     - enum-compat
     - mockextras
-    - numpy >=1.12,<1.19
+    - numpy <1.19
     - pandas <=1.0.3
     - pymongo >=3.6.0,<=3.11.0
     - python-dateutil
