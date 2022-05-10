@@ -17,11 +17,13 @@ build:
 
 requirements:
   host:
-    - numpy =1.16
+    - numpy
     - pip
     - python
     - setuptools
     - setuptools-git
+  build:
+    - numpy >=1.12,<1.19  
   run:
     - python >=3.6
     - decorator
