@@ -1,6 +1,6 @@
 {% set name = "arctic" %}
-{% set version = "1.80.4" %}
-{% set sha256 = "3a370316fcff89308a3b0123c589e489f7516ebf02989f9da1c45e562a0ed2bb" %}
+{% set version = "1.80.5" %}
+{% set sha256 = "5d3213b20950430274fe201febf8c81bede202f688a709b16acee66f22c77b2e" %}
 
 package:
   name: {{ name|lower }}
