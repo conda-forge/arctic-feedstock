@@ -20,12 +20,12 @@ requirements:
   host:
     - numpy =1.16
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
     - setuptools-git
     - six
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - decorator
     - enum-compat
     - mockextras
@@ -41,6 +41,8 @@ requirements:
 test:
   imports:
     - arctic
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/manahl/arctic
