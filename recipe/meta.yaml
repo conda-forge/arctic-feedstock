@@ -1,13 +1,14 @@
 {% set name = "arctic" %}
-{% set version = "1.82.2" %}
-{% set sha256 = "23aec884d8adfc28ba53731d12c0a2765065a643d488b426ba13acbf577c6a87" %}
+{% set version = "1.83.1" %}
+{% set gitsha = "3cf2a9ce3a7f2c2544ececd20d0f4f5b917f7b2a" %}
+{% set sha256 = "3ed90681bcd8c6058c2d858115710d9f3f893a3063325e15fed419612e68b7ff" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/manahl/arctic/archive/{{ gitsha }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -28,9 +29,9 @@ requirements:
     - decorator
     - enum-compat
     - mockextras
-    - numpy <2
-    - pandas <2
-    - pymongo >=3.6.0,<=3.11.0
+    - numpy
+    - pandas <3
+    - pymongo >=4
     - python-dateutil
     - pytz
     - six
